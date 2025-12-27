@@ -34,7 +34,8 @@ import {
   p1,
   p2,
   p3,
-  p4
+  p4,
+  p5,
 } from '../assets'
 
 
@@ -48,7 +49,7 @@ export const navLinks = [
   {
     id: "about",
     title: "About",
-    
+
   },
   {
     id: "work",
@@ -105,7 +106,7 @@ const technologies = [
     icon: framer,
   },
 
- 
+
   {
     name: "Three JS",
     icon: threejs,
@@ -151,7 +152,7 @@ const technologies = [
     name: "git",
     icon: git,
   },
- 
+
 
 ];
 
@@ -220,10 +221,22 @@ const projects = [
         name: "mongodb",
         color: "green-text-gradient",
       },
+      {
+        name: "express",
+        color: "yellow-text-gradient",
+      },
+      {
+        name:"razorpay",
+        color:"blue-text-gradient"
+      },
+      {
+        name:"redux"
+        ,color:"pink-text-gradient"
+      }
     ],
     image: p1,
     source_code_link: "https://github.com/mukil143/Trend--Ecommerce-frontend",
-    live_link: "https://trend-ecommerce-frontend.vercel.app/",
+    live_link: "https://trende-ecommerce-lf4z.vercel.app/",
   },
   {
     name: "Client Protfolio",
@@ -246,6 +259,36 @@ const projects = [
     image: p2,
     source_code_link: "https://github.com/mukil143/Harish-Sadhasivam-Portfolio",
     live_link: "https://harish-sadhasivam.vercel.app/",
+  },
+  {
+    name: "Bulkmailer",
+    description:
+      "A drag-and-drop bulk emailer designed to automate mass outreach using .xlsx file integration. It's user-friendly and efficient.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "node",
+        color: "white-text-gradient",
+      },
+    ],
+    image: p5,
+    source_code_link: "https://github.com/mukil143/BulkMail-MERN",
+    live_link: "https://bulk-mail-mern-rouge.vercel.app/",
   },
   {
     name: "Apple Clone",

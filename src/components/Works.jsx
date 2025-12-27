@@ -7,6 +7,7 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
+import { Link } from "react-router-dom";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -18,6 +19,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link
 }) => {
   const cardRef = useRef(null);
 
@@ -46,7 +48,8 @@ const ProjectCard = ({
   }, []);
 
   return (
-    <div  className="" ref={cardRef}>
+    <div
+      className="" ref={cardRef}>
       <Tilt
         options={{
           max: 45,
@@ -135,9 +138,9 @@ const Works = () => {
 
       <div className="works-container overflow-hidden  mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-5">
         {projects.map((project, index) => (
-          <div key={`project-${index}`} className="project-card">
+          <Link to={project.live_link} target="_blank" key={`project-${index}`} className="project-card">
             <ProjectCard index={index} {...project} />
-          </div>
+          </Link>
         ))}
       </div>
     </>
