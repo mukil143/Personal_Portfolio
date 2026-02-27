@@ -26,7 +26,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
-import prisma from './tech/prisma.png';
+import prisma from './tech/Prisma.png';
 import Webzspot from './tech/Webzspot.png';
 import firebase from './tech/Firebase.png';
 import firstTestimonial from './Tars Ken.webp';
