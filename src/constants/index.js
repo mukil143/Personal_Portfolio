@@ -1,4 +1,3 @@
-
 import {
   logo,
   backend,
@@ -28,6 +27,9 @@ import {
   redux,
   tailwind,
   threejs,
+  prisma,
+  Webzspot,
+  firebase,
   firstTestimonial,
   secondTestimonial,
   thirdTestimonial,
@@ -36,20 +38,16 @@ import {
   p3,
   p4,
   p5,
-} from '../assets'
-
+  formCraft,
+} from "../assets";
 
 // Import Tekisky separately
 import tekisky from "../assets/company/tekisky.png";
 
-
 export const navLinks = [
-
-
   {
     id: "about",
     title: "About",
-
   },
   {
     id: "work",
@@ -94,69 +92,76 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "gsap",
-    icon: gsap,
-  },
-  {
-    name: "framer",
-    icon: framer,
-  },
-
-
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Material Ui",
-    icon: mui,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
+    name: "MongoDB",
+    icon: mongodb,
   },
   {
     name: "Express Js",
     icon: express,
   },
   {
-    name: "AWS",
-    icon: aws,
+    name: "React JS",
+    icon: reactjs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Firebase",
+    icon: firebase,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    name: "github",
+    icon: github,
   },
   {
     name: "MySql",
     icon: mysql,
+  },
+  {
+    name: "Prisma",
+    icon: prisma,
+  },
+
+  {
+    name: "framer",
+    icon: framer,
+  },
+
+  {
+    name: "AWS",
+    icon: aws,
   },
 
   {
     name: "git",
     icon: git,
   },
-
-
 ];
 
 const experiences = [
+  {
+    title: "Full-Stack Developer",
+    company_name: "Webzspot",
+    icon: Webzspot,
+    iconBg: "#E6DEDD",
+    date: "Nov 2025 -  Present",
+    points: [
+      "Developing and maintaining web applications using MERN technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
   {
     title: "Full-Stack Developer",
     company_name: "Freelancer",
@@ -169,7 +174,7 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  },
+  }
 ];
 
 const testimonials = [
@@ -201,6 +206,44 @@ const testimonials = [
 
 const projects = [
   {
+    name: "FormCraft",
+    description:
+      "A dynamic form builder that empowers users to create custom forms with ease, featuring a user-friendly interface and robust functionality.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "white-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "razorpay",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: formCraft,
+    source_code_link: "https://github.com/mukil143/FormBuilder_SAAS_Backend",
+    live_link: "https://form-saas.netlify.app/",
+  },
+  {
     name: "Trende Ecommerce",
     description:
       "A full-stack e-commerce platform built to allow users to search, explore, and purchase a wide range of products.",
@@ -226,13 +269,13 @@ const projects = [
         color: "yellow-text-gradient",
       },
       {
-        name:"razorpay",
-        color:"blue-text-gradient"
+        name: "razorpay",
+        color: "blue-text-gradient",
       },
       {
-        name:"redux"
-        ,color:"pink-text-gradient"
-      }
+        name: "redux",
+        color: "pink-text-gradient",
+      },
     ],
     image: p1,
     source_code_link: "https://github.com/mukil143/Trend--Ecommerce-frontend",
@@ -335,6 +378,5 @@ const projects = [
     live_link: "https://mukil143.github.io/Tripadvisor-clone/",
   },
 ];
-
 
 export { services, technologies, experiences, testimonials, projects };

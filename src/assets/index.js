@@ -26,9 +26,13 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
+import prisma from './tech/prisma.png';
+import Webzspot from './tech/Webzspot.png';
+import firebase from './tech/Firebase.png';
 import firstTestimonial from './Tars Ken.webp';
 import secondTestimonial from './image.webp';
 import thirdTestimonial from './third testimonial.webp'
+import formCraft from './company/Formcraft.png';
 import p1 from './p1.webp'
 import p2 from './p2.webp'
 import p3 from './p3.webp'
@@ -60,6 +64,7 @@ export {
   gsap,
   framer,
   figma,
+  formCraft,
   git,
   html,
   javascript,
@@ -69,6 +74,9 @@ export {
   redux,
   tailwind,
   threejs,
+  prisma,
+  Webzspot,
+  firebase,
   p1,
   p2,
   p3,
